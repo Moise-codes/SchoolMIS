@@ -1,0 +1,8 @@
+CREATE TABLE schools (
+    id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    name VARCHAR(150)  NOT NULL,
+    code VARCHAR(50) NOT NULL UNIQUE,
+    email VARCHAR(150),
+    phone VARCHAR(30),
+    address VARCHAR(255)
+)
